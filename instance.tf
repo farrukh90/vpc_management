@@ -2,7 +2,8 @@ resource "aws_instance"  "web" {
    ami = "${var.ami}"
    instance_type = "${var.instance_type}"
    count = "${var.count}"
-   key_name = "${var.key_name}" 
+   key_name = "${var.key_name}"
+   subnet_id = "${aws_subnet.dev1.id}" 
 
 
    tags {
