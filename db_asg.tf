@@ -5,8 +5,8 @@ module "db-asg" {
 
   # Launch configuration
   lc_name = "example-lc-db"
-  image_id        = "${var.ami}"
-  instance_type   = "${var.instance_type}"
+  image_id        = "${var.db_ami}"
+  instance_type   = "${var.db_instance_type}"
   security_groups = ["${aws_security_group.allow_mysql.id}"]
 
   # Auto scaling group
