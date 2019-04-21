@@ -9,3 +9,4 @@ Appname           =           "Wordpress"
 min_size          =           1
 max_size          =           12
 desired_capacity  =           3
+DBname            =           "MySQL"
