@@ -19,10 +19,5 @@ module "asg" {
   desired_capacity          = "${var.desired_capacity}"
   wait_for_capacity_timeout = 0
 
-  tags {
-     Name = "${var.Appname}-${count.index +1}"
-     Env  = "${var.Env}"
-     Dept = "${var.Dept}"
-     Created_by = "${var.Created_by}"
-  }
+  
 }
