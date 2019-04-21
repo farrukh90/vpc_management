@@ -5,3 +5,7 @@ key_name          =           "developer"
 Created_by        =           "Farrukh"
 Env               =           "Dev"
 Dept              =           "IT"
+Appname           =           "Wordpress"
+min_size          =           1
+max_size          =           12
+desired_capacity  =           3
