@@ -5,7 +5,6 @@ module "asg" {
 
   # Launch configuration
   lc_name = "example-lc"
-
   image_id        = "${var.ami}"
   instance_type   = "${var.instance_type}"
   security_groups = ["${aws_security_group.allow_ssh.id}"]
@@ -18,6 +17,5 @@ module "asg" {
   max_size                  = "${var.max_size}"
   desired_capacity          = "${var.desired_capacity}"
   wait_for_capacity_timeout = 0
-
-  
+  associate_public_ip_address	= "true"
 }
