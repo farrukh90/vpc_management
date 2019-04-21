@@ -13,9 +13,9 @@ module "db-asg" {
   asg_name                  = "example-asg"
   vpc_zone_identifier       = ["${aws_subnet.dev2.id}"]
   health_check_type         = "EC2"
-  min_size                  = "${var.min_size}"
-  max_size                  = "${var.max_size}"
-  desired_capacity          = "${var.desired_capacity}"
+  min_size                  = "${var.db_min_size}"
+  max_size                  = "${var.db_max_size}"
+  desired_capacity          = "${var.db_desired_capacity}"
   wait_for_capacity_timeout = 0
   associate_public_ip_address	= "true"
 }
