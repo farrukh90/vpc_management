@@ -18,4 +18,5 @@ module "asg" {
   desired_capacity          = "${var.desired_capacity}"
   wait_for_capacity_timeout = 0
   associate_public_ip_address	= "true"
+  user_data = "${file("userdata.sh")}"
 }
